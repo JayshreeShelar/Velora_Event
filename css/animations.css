@@ -1,0 +1,81 @@
+@keyframes kb {
+    to {
+        transform: scale(1.1)
+    }
+}
+
+@keyframes ho {
+    to {
+        transform: translateX(-100%)
+    }
+}
+
+@keyframes hor {
+    to {
+        transform: translateX(100%)
+    }
+}
+
+@keyframes fo {
+    to {
+        opacity: 0;
+        transform: scale(1.1)
+    }
+}
+
+@keyframes dr {
+    to {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes sp {
+    from {
+        opacity: 0;
+        letter-spacing: .4em
+    }
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(30px)
+    }
+}
+
+@keyframes rise {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(.96)
+    }
+}
+
+.htext,
+.ph .hwrap>* {
+    animation: up 1s .2s both
+}
+
+.intro .htext,
+.intro .hwrap>* {
+    animation-delay: 2s
+}
+
+.hero .arch {
+    animation: up 1.2s .4s both
+}
+
+.intro .arch {
+    animation-delay: 2.2s
+}
+
+@media(prefers-reduced-motion:reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important
+    }
+
+    .rv {
+        opacity: 1
+    }
+}
